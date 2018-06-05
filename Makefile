@@ -2,10 +2,10 @@ build:
 	mkdir build
 
 native:	build
-	clang -framework GLUT -framework OpenGL -Wno-deprecated circle.c -o circle
+	clang -framework GLUT -framework OpenGL -Wno-deprecated ball.c -o ball
 
 wasm:	build
-	emcc -O3 -s LEGACY_GL_EMULATION=1 -s WASM=1 -o build/index.html circle.c
+	emcc -O3 -s LEGACY_GL_EMULATION=1 -s WASM=1 -o build/index.html ball.c
 
 serve:
 	serve build

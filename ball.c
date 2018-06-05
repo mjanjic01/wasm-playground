@@ -1,4 +1,5 @@
 /*
+ * https://www.ntu.edu.sg/home/ehchua/programming/opengl/CG_Introduction.html#zz-6.5
  * GL07BouncingBall.cpp: A ball bouncing inside the window
  */
 
