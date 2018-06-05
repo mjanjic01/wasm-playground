@@ -43,8 +43,8 @@ void display() {
  
    glTranslatef(ballX, ballY, 0.0f);  // Translate to (xPos, yPos)
    // Use triangular segments to form a circle
+   glColor3f(0.0f, 0.0f, 1.0f);
    glBegin(GL_TRIANGLE_FAN);
-      glColor3f(0.0f, 0.0f, 1.0f);  // Blue
       glVertex2f(0.0f, 0.0f);       // Center of circle
       int numSegments = 100;
       GLfloat angle;
